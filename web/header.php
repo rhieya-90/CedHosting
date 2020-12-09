@@ -1,5 +1,9 @@
 <?php 
 include ("config.php");
+$query = new Query;
+    if(isset($_POST["submit"])){
+    	
+    }
 ?>
 
 
@@ -19,7 +23,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Planet Hosting Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <!---fonts-->
@@ -32,21 +35,174 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--lightboxfiles-->
-<script type="text/javascript">
-	$(function() {
-	$('.team a').Chocolat();
-	});
-</script>	
-<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
-						<script type="text/javascript">
-							$(function() {
-							
-								$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
-
-							});
-						</script>						
+	
 <!--script-->
+
+<?php 
+   $basename = basename($_SERVER['REQUEST_URI']);
+   switch($basename){
+   	case 'about.php':
+   		?>
+   			<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+   			<script type="text/javascript">
+		$(function() {
+		$('.team a').Chocolat();
+		});
+		</script>	
+		<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+		<script type="text/javascript">
+		$(function() {
+								
+		$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+		});
+		</script>	
+ 		<?php
+ 		break;
+
+ 		case 'account.php':
+ 		?>
+ 			<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/jquery.swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+ 		<?php
+ 		break;
+
+ 		case 'blog.php':
+ 		?>
+
+ 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/jquery.swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+ 		<?php
+ 		break;
+
+ 		case 'linuxhosting.php':
+ 		?>
+ 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/jquery.swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+ 		<?php
+ 		break;
+
+ 		case 'wordpresshosting.php':
+ 		?>
+ 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/jquery.swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+		<?php
+		break;
+		case 'windowshosting.php':
+		?>
+
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/jquery.swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+		<?php
+		break;
+		case 'cmshosting.php':
+		?>
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/jquery.swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+		<?php
+		break;
+		case 'pricing.php':
+		?>
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/jquery.swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+		<?php
+		break;
+		case 'contact.php':
+		?>
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/jquery.swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+		<?php
+		break;
+		case 'login.php':
+		?>
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/jquery.swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+		<?php
+		break;
+		case 'index.php':
+		?>
+		<script type="text/javascript">
+
+			alert("index");
+		</script>
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+			<script type="text/javascript">
+				$(function() {
+				$('.team a').Chocolat();
+				});
+			</script>
+			<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+			<script type="text/javascript">
+			$(function() {
+							
+			$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+			});
+			</script>			
+		<?php
+		break;
+		default:
+		break;
+   		}
+		?>
 </head>
+
 <body>
 	<!---header--->
 		<div class="header">
@@ -70,24 +226,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="index.php">Home <i class="sr-only">(current)</i></a></li>
-								<li><a href="about.php">About</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages<i class="caret"></i></a>
-										<ul class="dropdown-menu">
-											<li><a href="blog.php">Blog</a></li>
-											<li><a href="pricing.php">Pricing</a></li>
-											<li><a href="faq.php">FAQ's</a></li>
-											<li><a href="testimonials.php">Testimonials</a></li>
-											<li><a href="history.php">History</a></li>
-											<li><a href="support.php">Support</a></li>
-											<li><a href="templatesetting.php">Template setting</a></li>
-											<li><a href="login.php">Login</a></li>
-											<li><a href="portfolio.php">Portfolio</a></li>
-										</ul>
-									</li>
-								<li><a href="services.php">Services</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hosting<i class="caret"></i></a>
+								<li><a href="about.php">About</a></li>								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<i class="caret"></i></a>
 									<ul class="dropdown-menu">
 										<li><a href="linuxhosting.php">Linux hosting</a></li>
 										<li><a href="wordpresshosting.php">WordPress Hosting</a></li>
@@ -95,10 +235,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="cmshosting.php">CMS Hosting</a></li>
 									</ul>			
 								</li>
-								<li><a href="codes.php">Blog</a></li>
+								<li><a href="pricing.php">Pricing</a></li>
+								<li><a href="blog.php">Blog</a></li>
 								<li><a href="contact.php">Contact</a></li>
 								<li><a href="contact.php">Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-								<li><a href="contact.php">Login</a></li>
+								<li><a href="login.php">Login</a></li>
 							</ul>
 									  
 						</div><!-- /.navbar-collapse -->
