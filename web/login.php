@@ -18,14 +18,14 @@ include ("header.php");
 									<form>
 									  <div>
 										<span>Email Address<label>*</label></span>
-										<input type="text"> 
+										<input type="email" name="email" title="ex xyz@gmail.com" pattern="[^\s][A-Za-z0-9]+@[a-z]+.[^.][a-z]+"> 
 									  </div>
 									  <div>
 										<span>Password<label>*</label></span>
-										<input type="password"> 
+										<input type="password" name="password" > 
 									  </div>
 									  <a class="forgot" href="#">Forgot Your Password?</a>
-									  <input type="submit" value="Login">
+									  <input type="submit" name="login" value="Login" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" title="No spaces are allowed">
 									</form>
 								</div>	
 								<div class="clearfix"> </div>

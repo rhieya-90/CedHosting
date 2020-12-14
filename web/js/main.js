@@ -31,14 +31,14 @@ $(document).ready(function() {
 //             }
 //         });
 //     }
-function validatePassword() {
-        let value = $(this).val();
-        let pattern = new RegExp('^[a-zA-Z0-9@#$%*]{8,16}$');
-        if (!pattern.test(value)) {
-            alert("Enter valid password!");
-        } 
-    }
-
+// function validatePassword() {
+//         let value = $(this).val();
+//         let pattern = new RegExp('^[a-zA-Z0-9@#$%*]{8,16}$');
+//         if (!pattern.test(value)) {
+//             alert("Enter valid password!");
+//         } 
+//     }
+ 
     function validateConfirmPassword() {
         let password = $('#password').val();
         let confirmPassword = $(this).val();
