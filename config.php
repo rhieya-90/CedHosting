@@ -65,6 +65,7 @@ class Query extends config{
 		
 			return $arr;
 		} 
+		echo $sql;
 		return 0;
 	}
 
@@ -83,7 +84,7 @@ class Query extends config{
 			$fields = "`".implode( '`,`',$fields )."`";
 			$values = "'".implode( "','",$values )."'";
 			$sql = "INSERT INTO `$table`($fields) VALUES($values)";
-
+			echo $sql;
 			return $this->connect()->query( $sql );
 
 		}

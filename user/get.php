@@ -1,5 +1,5 @@
 <?php 
-include ("config.php");
+include ("../config.php");
 $query = new Query;
 $message="";
     if(isset($_POST["submit"])){
